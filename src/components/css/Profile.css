@@ -1,0 +1,561 @@
+#profile__section {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    grid-row-gap: 15px;
+    width: 100%;
+    height: auto;
+    padding: 10px clamp(10px, 3vw, 50px);
+}
+
+.navigate__back__section {
+    grid-row: 1/2;
+}
+
+.navigate__back__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.backarrow__img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.navigate__to__text {
+    font-size: .8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bnp__section {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, minmax(50px, auto));
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    overflow: hidden;
+}
+
+.banner__section {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+}
+
+.profile__section {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    width: 100%;
+    height: 100%;
+}
+
+.profile__img__section {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    justify-self: center;
+    align-self: center;
+    width: clamp(90px, 14vw, 150px);
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
+.profile__img,
+.skeleton__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.name-loc__section {
+    display: inline-flexbox;
+    flex-direction: column;
+    grid-column: 1/-1;
+    grid-row: 4/-1;
+    padding-left: 10px;
+}
+
+.name,
+.comp__post,
+.loc {
+    text-transform: capitalize;
+    letter-spacing: .3px;
+    color: rgb(30, 30, 131);
+}
+
+.name {
+    /* font-size:1.2rem; */
+    font-size: clamp(1.2rem, 3.3vw, 1.7rem);
+    /* font-size: 1.7rem; */
+    font-weight: 600;
+}
+
+.comp__post {
+    gap: 6px;
+    align-items: center;
+}
+
+.company,
+.position {
+    /* font-size:0.65rem; */
+    font-size: clamp(.65rem, 1.7vw, .8rem);
+    /* font-size: .8rem; */
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.dot {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: rgb(63, 63, 63);
+}
+
+.loc__icon__wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(196, 196, 243);
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-top: 6px;
+}
+
+.loc__icon {
+    max-width: 10px;
+    height: auto;
+}
+
+.loc {
+    /* font-size: .7rem; */
+    font-size: clamp(.7rem, 1.8vw, .9rem);
+    /* font-size: .9rem; */
+    line-height: 1.3;
+}
+
+.btns {
+    grid-column: 2/-1;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
+.add__btn,
+.spr__btn {
+    font-size: clamp(.65rem, 1.7vw, .8rem);
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    letter-spacing: .3px;
+    line-height: 1.3;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add__btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #6200EE;
+}
+
+.spr__btn {
+    background-color: #00C853;
+}
+
+.user {
+    width: 13px;
+    height: auto
+}
+
+.all__info__section,
+.all__experiences__section,
+.all__education__section,
+.all__skills__section,
+.short__desc__section,
+.all__languages__section {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.short__desc__section {
+    grid-row: 3/4;
+}
+
+.all__info__section {
+    grid-row: 4/5;
+}
+
+.all__info__title,
+.all__experiences__title,
+.all__education__title,
+.all__skills__title,
+.short__desc__title,
+.all__languages__title {
+    justify-content: space-between;
+}
+
+.all__info__wrapper__one {
+    margin-top: 10px;
+}
+
+/* .all__info__left__wrapper{
+}
+.all__info__right__wrapper{
+} */
+
+.info__lists__wrapper,
+.experiences__lists__wrapper,
+.education__lists__wrapper,
+.short__desc__wrapper {
+    margin: 13px 0;
+    gap: 10px;
+}
+
+.short__desc__wrapper {
+    gap: 5px;
+}
+
+
+/* .icon{
+} */
+
+.info__lists,
+.experiences__lists,
+.education__lists {
+    width: 100%;
+}
+
+.title {
+    font-size: .9rem;
+    font-size: clamp(.9rem, 2.15vw, 1.2rem);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: rgb(59, 59, 59);
+}
+
+.editimg__wrapper {
+    width: 15px;
+    height: auto;
+}
+
+.editimg {
+    display: block;
+    width: 100%;
+}
+
+.icon {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.mail__icon,
+.birthday__icon,
+.phone__icon,
+.suitcase__icon {
+    width: 100%;
+    height: auto;
+    background-color: rgb(237, 237, 237);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.company__icon,
+.college__icon {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.info__text1,
+.experience__inputs,
+.education__inputs {
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .3px;
+}
+
+.info__text1,
+.company__input,
+.college__input,
+.short__desc,
+.skills__list,
+.lang {
+    color: black;
+    font-size: .7rem;
+    font-size: clamp(.7rem, 1.7vw, .85rem);
+
+}
+
+.short__desc,
+.skills__list {
+    letter-spacing: .3px;
+}
+
+.info__text2,
+.position__input,
+.department__input {
+    font-size: 0.65rem;
+    font-weight: 400;
+}
+
+.info__text2 {
+    color: rgb(133, 132, 132);
+}
+
+.exp__upper__fields,
+.exp__lower__fields {
+    gap: 10px;
+}
+
+.update__personal {
+    background-color: #e0dfdf;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(174, 174, 174);
+}
+
+.experience__inputs {
+    text-transform: capitalize;
+}
+
+.company__input,
+.position__input {
+    width: 150px;
+}
+
+.department__input,
+.position__input {
+    color: rgb(73, 73, 73);
+}
+
+.worktype__input,
+.totalexp__input,
+.yoc__input,
+.loc__input,
+.lang__lvl {
+    color: rgb(95, 94, 94);
+}
+
+.worktype__input {
+    width: 70px;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+.totalexp__input,
+.yoc__input,
+.loc__input {
+    width: 100px;
+}
+
+.worktype__input,
+.totalexp__input,
+.yoc__input,
+.loc__input,
+.lang__lvl {
+    font-size: .55rem;
+}
+
+.start__input,
+.end__input {
+    display: none;
+}
+
+.all__info__wrapper__two {
+    border-top: 2px solid rgb(214, 213, 213);
+}
+
+.all__experiences__section {
+    grid-row: 5/6;
+}
+
+.experiences__list__wrapper,
+.education__list__wrapper {
+    padding: 4px 0;
+    border-top: 2px solid rgb(214, 213, 213);
+}
+
+.experiences__list__wrapper:first-child,
+.education__list__wrapper:first-child {
+    border-top: none;
+}
+
+.all__education__section {
+    grid-row: 6/7;
+}
+
+.all__skills__section {
+    grid-row: 7/8;
+}
+
+.all__skills__wrapper,
+.all__languages__wrapper {
+    margin: 10px 0;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills__list {
+    padding: 2px 10px;
+}
+
+.skills__list,
+.lang__lists {
+    border-radius: 4px;
+    border: 1px solid rgb(196, 196, 196);
+}
+
+.all__languages__section {
+    grid-row: 8/9;
+}
+
+.lang__lists {
+    padding: 4px 10px;
+    gap: 2px;
+}
+
+
+
+/* .lang__lvl{
+    font-size: .6rem;
+} */
+
+.lang,
+.lang__lvl {
+    line-height: 1;
+}
+
+@media only screen and (min-width:450px) {
+    .banner__section {
+        height: 120px;
+    }
+
+    .all__info__section,
+    .all__experiences__section,
+    .all__education__section,
+    .all__skills__section,
+    .short__desc__section,
+    .all__languages__section,
+    .name-loc__section {
+        padding: 15px;
+    }
+
+    .btns {
+        padding-right: 15px;
+    }
+
+    .icon {
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    .info__lists__wrapper,
+    .experiences__lists__wrapper,
+    .education__lists__wrapper,
+    .short__desc__wrapper {
+        margin:16px 0;
+        gap: 15px;
+    }
+
+}
+
+@media only screen and (min-width:750px) {
+    .banner__section {
+        height: 140px;
+    }
+
+    .all__info__section,
+    .all__experiences__section,
+    .all__education__section,
+    .all__skills__section,
+    .short__desc__section,
+    .all__languages__section,
+    .name-loc__section {
+        padding: 20px;
+    }
+
+    .name-loc__section {
+        margin-bottom: 15px;
+    }
+
+    .btns {
+        padding-right: 20px;
+    }
+
+    .icon {
+        max-width: 38px;
+        max-height: 38px;
+    }
+
+    .info__lists__wrapper,
+    .experiences__lists__wrapper,
+    .education__lists__wrapper,
+    .short__desc__wrapper {
+        margin: 20px 0;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width:1020px) {
+    #profile__section {
+        grid-template-columns: 70% 30%;
+        grid-column-gap: 10px;
+    }
+
+    .bnp__section {
+        grid-column: 1/-1;
+    }
+
+    .short__desc__section,
+    .all__info__section,
+    .all__education__section,
+    .all__languages__section,
+    .all__experiences__section {
+        grid-column: 1/2;
+    }
+
+    .all__skills__section {
+        grid-row: 3/4;
+        grid-column: 2/-1;
+        height: auto;
+    }
+
+    .all__languages__section {
+        grid-row: 7/8;
+    }
+
+    .banner__section {
+        height: 160px;
+    }
+
+    .name-loc__section {
+        padding-left: 20px;
+    }
+
+    .btns {
+        padding-right: 20px;
+    }
+}
